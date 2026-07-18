@@ -1,0 +1,1 @@
+Stores database related files.
