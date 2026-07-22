@@ -1,4 +1,6 @@
- System Architecture
+System Architecture
+
+Note: This is the **current draft** of the system architecture and is **not finalized**. It represents our current understanding of the project and will be updated iteratively as we refine the requirements, simplify the design, and make team decisions during development.
 
 ## Overview
 
