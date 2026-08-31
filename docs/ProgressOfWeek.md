@@ -84,3 +84,31 @@ Use the new data in the student's future history
 - Finalize the backend workflow.
 - Decide the algorithm for generating reviews.
 - Start implementing the basic backend.
+
+ Week 4 Progress
+ Date -: 30/08/2026
+ Progress Update
+
+we discussed the next phase of the project and how to move from the current fixed rule-based approach toward AI/ML-based essay analysis.
+Discussion and Work Started
+The current rule-based system was considered as an initial prototype only.
+As suggested, the next phase will focus on using AI/NLP techniques for essay analysis.
+We discussed converting each essay into meaningful features rather than only checking word count.
+Started working on a feature extraction module in the Node.js backend.
+Initial Features
+The features currently being extracted include:
+Word count
+Unique words
+Vocabulary diversity
+Average sentence length
+These features will be extracted from both the student's previous 50 essays and the new Essay #51.
+AI/NLP Next Phase
+After basic feature extraction, we plan to explore AI/NLP techniques for:
+Understanding the semantic meaning of essays
+Comparing the new essay with previous essays
+Identifying changes in writing patterns
+Detecting improvement or weak areas
+Generating more personalized feedback
+
+our next plan is :
+improve the system using NLP for semantic analysis and Machine Learning for more accurate essay classification and personalized recommendations.
