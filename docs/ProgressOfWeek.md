@@ -85,7 +85,7 @@ Use the new data in the student's future history
 - Decide the algorithm for generating reviews.
 - Start implementing the basic backend.
 
- Week 4 Progress
+ ## Week 4 Progress
  Date -: 30/08/2026
  Progress Update
 
@@ -110,5 +110,5 @@ Identifying changes in writing patterns
 Detecting improvement or weak areas
 Generating more personalized feedback
 
-our next plan is :
+## next week plan :
 improve the system using NLP for semantic analysis and Machine Learning for more accurate essay classification and personalized recommendations.
