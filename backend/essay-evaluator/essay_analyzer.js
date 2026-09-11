@@ -1,4 +1,6 @@
 const fs = require("fs");
+const path = require("path");
+const analyzeSemantic = require("./semantic_analyzer");
 
 function cleanText(text) {
     return text
@@ -62,13 +64,13 @@ function analyze() {
 
     // Read current essay
     const currentEssay = fs.readFileSync(
-        "./data/latest_essay.txt",
+        path.join(__dirname, "data/latest_essay.txt"),
         "utf8"
     );
 
     // Read previous essays
     const previousText = fs.readFileSync(
-        "./data/previous_essays.txt",
+        path.join(__dirname, "data/previous_essays.txt"),
         "utf8"
     );
 
@@ -132,7 +134,8 @@ function analyze() {
 
     return {
         currentGrowth,
-        suggestion
+        suggestion,
+        semantic: analyzeSemantic(currentEssay, previousEssays)
     };
 }
 
