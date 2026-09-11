@@ -1,28 +1,17 @@
 const express = require("express");
-
-const analyze = require("./essay_analyzer");
+const essayService = require("./services/essay_service");
 
 const app = express();
-
+app.use(express.json());
 app.get("/analyze", (req, res) => {
-
     try {
-
-        const result = analyze();
-
-        res.json(result);
-
+        res.json(essayService.analyzeCurrentEssay());
     } catch (error) {
-
-        res.status(500).json({
-            error: "Unable to analyze essay"
-        });
-
+        res.status(500).json({ error: "Unable to analyze essay" });
     }
-
 });
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT || 3000);
 
 app.listen(PORT, () => {
 
