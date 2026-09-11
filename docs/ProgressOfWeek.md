@@ -113,3 +113,15 @@ Generating more personalized feedback
 
 ## next week plan :
 improve the system using NLP for semantic analysis and Machine Learning for more accurate essay classification and personalized recommendations.
+
+
+
+
+### Week 5 Progress
+### Current Progress
+## Date -: 10/09/2026
+- Discussed and finalized the next phase with the team.
+- Focused on semantic understanding of essays using NLP.
+- Selected Sentence Transformer (`all-MiniLM-L6-v2`) for generating essay embeddings.
+- Selected Cosine Similarity for comparing new essays with previous essays.
+- Next step: implement and test semantic similarity between the new essay and the historical dataset.
